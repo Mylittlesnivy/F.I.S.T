@@ -1,0 +1,338 @@
+*{padding:0;margin:0;list-style:none;}
+#FIST>img{width: 100%;vertical-align: bottom;}
+#FIST{
+	width: 100%;
+    min-width: 1200px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+#FIST video{
+    width: 100%;
+    display: block;
+}
+
+video::-webkit-media-controls{ 
+display:none !important;
+}
+
+#frame{
+	position: absolute;
+	top: 0;left: 0;
+    width: 400%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+#box1,#box2,#box3,#box4{
+    position: relative;
+    width: 25%;
+    float: left;
+}
+
+.logo{
+    z-index: 3;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    width: 9rem;
+    height: 4rem;
+    position: absolute;
+    left: 1%;
+    top: 3%;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    background-image: url(../img/logo.png);
+    cursor: pointer;
+}
+.logo:hover{
+    animation: lo linear 2s;
+}
+@keyframes lo{
+    0%{transform: translateX(0);}
+    25%{transform: translateX(10px);}
+    50%{transform: translateX(0);}
+    75%{transform: translateX(10px);}
+    100%{transform: translateX(0);}
+}
+
+.steam{
+    position:absolute;
+    left: 1%;
+    bottom: 20%;
+    z-index: 3;
+}
+.steam img{
+    width: 90%;
+    cursor: pointer;
+}
+
+#nav{
+    position: absolute;
+    left: 50%;
+    top: 4%;
+    transform: translateX(-50%);
+    z-index: 9;
+    display: flex;
+    width: 26%;
+    justify-content: space-around;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    font-family: "微软雅黑";
+}
+#nav a{color: white;text-decoration: none;}
+
+.title{
+    width: 25%;
+    position:absolute;
+    top: 35%;left: 50%;
+    transform:translateX(-50%);
+}
+.title>img{
+    width: 100%;vertical-align: bottom;
+}
+
+.title2{width: 80%;margin: 3% auto;}
+.title2>img{width: 100%;vertical-align: bottom;}
+
+.buy{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buysteam{
+    z-index: 2;
+    background-size: contain;
+    width: 10rem;
+    height: 2.9rem;
+    background-image: url(../img/buysteam.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.buysteam:hover{
+    background-image: url(../img/buysteam2.png);
+}
+
+.buyps{
+    z-index: 2;
+    background-size: contain;
+    width: 10rem;
+    height: 2.9rem;
+    background-image: url(../img/buyps.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.buyps:hover{
+    background-image: url(../img/buyps2.png);
+}
+
+.egg{
+    width:14%;
+    left: 1%;
+    top: 70%;
+    position: absolute;
+    cursor: pointer;
+}
+.egg img{
+    width: 100%;
+}
+
+.music{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    right: 18%;
+    top: 2%;
+    background-image: url(../img/play.png);
+    background-size: cover;
+}
+.icon{
+    position:absolute;
+    right: 2%;
+    bottom: 10%;
+    z-index: 3;
+}
+
+/* --------------------------------------------------- */
+
+.story{
+    display: block;
+    width: 367px;
+    height: 363px;
+    background-image: url(../img/story1.png);
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    top: 28%;
+    transform: translateX(-50%);
+    transition: background 0.2s;
+}
+.next{
+	position: absolute;
+    top: 108%;
+    left: 47%;
+    /*transform: translate(-50%,150px);*/
+    cursor: pointer;
+    animation: n 1s infinite linear ;
+}
+@keyframes n{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+}
+
+
+#box3{height:100%;}
+
+#box3 img{border: 0;vertical-align: bottom}
+
+.char{
+    width: 5.875%;
+    height: 100%;
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.char2{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.q-d{background-image: url(../img/q-d.png);}
+.shu-d{background-image: url(../img/shu-d.png);}
+.xiong-d{background-image: url(../img/xiong-d.png);}
+.niu-d{background-image: url(../img/niu-d.png);}
+.lei-d{background-image: url(../img/lei-d.png);}
+
+.q-d:hover{background-image: url(../img/q-l.png);}
+.shu-d:hover{background-image: url(../img/shu-l.png);}
+.xiong-d:hover{background-image: url(../img/xiong-l.png);}
+.niu-d:hover{background-image: url(../img/niu-l.png);}
+.lei-d:hover{background-image: url(../img/lei-l.png);}
+
+.q-l{background-image:url(../img/q-l.png);}
+.shu-l{background-image: url(../img/shu-l.png);}
+.xiong-l{background-image: url(../img/xiong-l.png);}
+.niu-l{background-image: url(../img/niu-l.png);}
+.lei-l{background-image: url(../img/lei-l.png);}
+
+.char-big{
+	height: 100%;
+    float: left;
+    object-fit: cover;
+    cursor: pointer;
+    transition: width 0.2s ;
+}
+
+.char-choose{
+    width: 70.625%;
+}
+.char-no{
+	width: 0;
+}
+
+.char-big img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* -------------------------------------------------------- */
+
+#box4{
+    height:100%;
+    background-image: url(../img/bg4.jpg);
+    background-size: cover;
+}
+.game-static{
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.st-title{
+    position: absolute;
+    top: 11%;
+    display: flex;
+    justify-content: space-between;
+}
+.st-title img{
+    width: 49.5%;
+    cursor: pointer;
+    vertical-align: bottom
+}
+
+.st-body{
+    position: absolute;
+    top: 17.5%;
+    width: 100%;
+    height: 53%;
+    background-image: url(../img/game1.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    transition: background 0.3s;
+}
+
+.st-min{
+    top: 73.2%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.st-min div{
+    width: 24.5%;
+    position: relative;
+}
+.st-min img{
+    width: 100%;
+}
+
+.min-d{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#tobecome{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.come-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.close{
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
